@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .flex-container{
+            display: flex;
+            border: 2px solid grey;
+            height: 45vh;
+            flex-wrap: wrap;
+            justify-content: center;
+            /*flex-flow to apply flex-direction and flex-wrap in on command*/
+        }
+        .flex-item{
+            background-color: red;
+            border: 2px solid black;
+            margin: 12px;
+            width: 122px;
+            height: 122px;
+        }
+        #item1{
+            order: 2;
+            flex-grow: 3;
+            /*flex-shrink can be use to shrink that item first when the width is decrease*/
+            align-self: center;
+            
+        }
+        #item4{
+            order: 3;
+            flex-grow: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div id="item1" class="flex-item">
+            1
+        </div>
+        <div id="item2" class="flex-item">
+            2
+        </div>
+        <div id="item3" class="flex-item">
+            3
+        </div>
+        <div id="item4" class="flex-item">
+            4
+        </div>
+    </div>
+</body>
+</html>
